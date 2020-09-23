@@ -5432,6 +5432,7 @@ dependencies = [
  "sp-std",
  "sp-trie",
  "sp-version",
+ "xcm",
 ]
 
 [[package]]
