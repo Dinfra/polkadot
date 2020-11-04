@@ -164,6 +164,7 @@ HrmpChannels: map HrmpChannelId => Option<HrmpChannel>;
 /// - for each egress index entry for `P` each item `E` in the index should present in `HrmpChannels`
 ///   as `(P, E)`.
 /// - there should be no other dangling channels in `HrmpChannels`.
+/// - the vectors are sorted.
 HrmpIngressChannelsIndex: map ParaId => Vec<ParaId>;
 HrmpEgressChannelsIndex: map ParaId => Vec<ParaId>;
 /// Storage for the messages for each channel.
